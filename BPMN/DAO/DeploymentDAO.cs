@@ -19,5 +19,10 @@ namespace BPMN.DAO
         {
             return JsonConvert.DeserializeObject<Entity.Deployments>(restApp.makeGet("activiti-rest/service/repository/deployments/"));
         }
+
+        public Entity.Deployment getDeployment(string id)
+        {
+            return JsonConvert.DeserializeObject<Entity.Deployment>(restApp.makeGet("activiti-rest/service/repository/deployments/" + id));
+        }
     }
 }

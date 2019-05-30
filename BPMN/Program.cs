@@ -16,8 +16,7 @@ namespace BPMN
 
             foreach (Entity.Deployment deployment in deploymentDAO.getDeployments().data)
             {
-                Console.WriteLine(deployment.id);
-                Console.WriteLine(deployment.name);
+                Console.WriteLine(deploymentDAO.getDeployment(deployment.id).name);
             }
             
         Console.ReadKey();
