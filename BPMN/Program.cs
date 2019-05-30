@@ -14,10 +14,15 @@ namespace BPMN
         {
             DAO.DeploymentDAO deploymentDAO = new DAO.DeploymentDAO();
 
-            Console.WriteLine(deploymentDAO.getDeployments().total);
-            Console.ReadKey();
+            foreach (Entity.Deployment deployment in deploymentDAO.getDeployments().data)
+            {
+                Console.WriteLine(deployment.id);
+                Console.WriteLine(deployment.name);
+            }
+            
+        Console.ReadKey();
         }
 
-        
-    }
+
+}
 }

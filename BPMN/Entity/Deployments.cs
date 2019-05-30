@@ -8,11 +8,11 @@ namespace BPMN.Entity
 {
     public class Deployments
     {
-        List<Deployment> deployment { get; set; }
+        public Deployment[] data { get; set; }
         public int total { get; set; }
-        int start { get; set; }
-        string sort { get; set; }
-        string order {get; set;}
-        int size { get; set; }
+        public int start { get; set; }
+        public string sort { get; set; }
+        public string order { get; set; }
+        public int size { get; set; }
     }
 }

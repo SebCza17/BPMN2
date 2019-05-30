@@ -1,12 +1,18 @@
-﻿namespace BPMN.Entity
+﻿using System;
+
+namespace BPMN.Entity
 {
-    internal class Deployment
+    public class Deployment
     {
-        int id { get; set; }
-        string name { get; set; }
-        string deploymentTime { get; set; }
-        string category { get; set; }
-        string url { get; set; }
-        string tenantId { get; set; }
+        public string id { get; set; }
+        public string name { get; set; }
+        public DateTime deploymentTime { get; set; }
+        public string category { get; set; }
+        public string url { get; set; }
+        public object tenantId { get; set; }
     }
+
+
+   
+
 }

@@ -9,8 +9,6 @@ namespace BPMN.DAO
 {
     class DeploymentDAO
     {
-        private string httpDeployments = "http://192.168.99.100:8080/activiti-rest/service/repository/deployments/";
-
         private RestApp restApp;
 
         public DeploymentDAO()
