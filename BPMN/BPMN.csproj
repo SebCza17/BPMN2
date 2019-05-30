@@ -61,10 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\DeploymentDAO.cs" />
     <Compile Include="Entity\Deployments.cs" />
-    <Compile Include="Entity\DeploymentsData.cs" />
+    <Compile Include="Entity\Deployment.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RestApp.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

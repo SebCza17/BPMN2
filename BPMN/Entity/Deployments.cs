@@ -8,7 +8,7 @@ namespace BPMN.Entity
 {
     public class Deployments
     {
-        List<DeploymentsData> deploymentsData { get; set; }
+        List<Deployment> deployment { get; set; }
         public int total { get; set; }
         int start { get; set; }
         string sort { get; set; }

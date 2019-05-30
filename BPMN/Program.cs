@@ -12,13 +12,12 @@ namespace BPMN
     {
         static void Main(string[] args)
         {
-            HttpClient httpClient = new HttpClient();
-            var byteArray = Encoding.ASCII.GetBytes("kermit:kermit");
-            httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Convert.ToBase64String(byteArray));
-            var x = httpClient.GetStringAsync("http://192.168.99.100:8080/activiti-rest/service/repository/deployments/").Result;
-            Console.WriteLine(JsonConvert.DeserializeObject<Entity.Deployments>(x));
-            Console.WriteLine("TestRepo");
+            DAO.DeploymentDAO deploymentDAO = new DAO.DeploymentDAO();
+
+            Console.WriteLine(deploymentDAO.getDeployments().total);
             Console.ReadKey();
         }
+
+        
     }
 }

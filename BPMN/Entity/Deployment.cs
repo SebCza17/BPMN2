@@ -1,6 +1,6 @@
 ﻿namespace BPMN.Entity
 {
-    internal class DeploymentsData
+    internal class Deployment
     {
         int id { get; set; }
         string name { get; set; }
